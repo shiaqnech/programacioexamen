@@ -129,7 +129,7 @@ public class App {
 
                 while (contrasenyano) {
                     contrasenyano = false;
-
+                    
                     if (contrasenyaregistre.matches("(?=.*[a-z])(?=.*[A-Z]).{8,}")) {
                         arraytaulausuaris[6][posició] = contrasenyaregistre;
 
