@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lletresiparaules2",
+            "request": "launch",
+            "mainClass": "app.lletresiparaules2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - dades",
+            "request": "launch",
+            "mainClass": "app.dades"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - entrarusuaris",
+            "request": "launch",
+            "mainClass": "app.entrarusuaris"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bingofinal",
+            "request": "launch",
+            "mainClass": "app.bingofinal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica13",
+            "request": "launch",
+            "mainClass": "app.practica13"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica8",
+            "request": "launch",
+            "mainClass": "app.practica8"
+        }
+    ]
+}

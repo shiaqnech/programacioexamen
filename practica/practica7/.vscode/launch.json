@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bingofinal",
+            "request": "launch",
+            "mainClass": "app.bingofinal",
+            "projectName": "practica77"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bingo2",
+            "request": "launch",
+            "mainClass": "app.bingo2",
+            "projectName": "practica77"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bingorohit",
+            "request": "launch",
+            "mainClass": "app.bingorohit",
+            "projectName": "practica77"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica10",
+            "request": "launch",
+            "mainClass": "app.practica10",
+            "projectName": "practica77"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bingo",
+            "request": "launch",
+            "mainClass": "app.bingo",
+            "projectName": "practica77"
+        }
+    ]
+}

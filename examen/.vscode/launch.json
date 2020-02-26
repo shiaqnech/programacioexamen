@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ez5",
+            "request": "launch",
+            "mainClass": "ez5"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ez4",
+            "request": "launch",
+            "mainClass": "ez4"
+        }
+    ]
+}

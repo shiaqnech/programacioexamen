@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - arraybidimensionalaleatori",
+            "request": "launch",
+            "mainClass": "arraybidimensionalaleatori"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - arraybidimensional",
+            "request": "launch",
+            "mainClass": "arraybidimensional"
+        }
+    ]
+}

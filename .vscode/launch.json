@@ -1,0 +1,192 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - app",
+            "request": "launch",
+            "mainClass": "app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica8",
+            "request": "launch",
+            "mainClass": "practica8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Practica7",
+            "request": "launch",
+            "mainClass": "Practica7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica7",
+            "request": "launch",
+            "mainClass": "practica7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica6",
+            "request": "launch",
+            "mainClass": "practica6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica5",
+            "request": "launch",
+            "mainClass": "practica5"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica4",
+            "request": "launch",
+            "mainClass": "practica4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica3",
+            "request": "launch",
+            "mainClass": "practica3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica2",
+            "request": "launch",
+            "mainClass": "practica2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - practica",
+            "request": "launch",
+            "mainClass": "practica"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - email",
+            "request": "launch",
+            "mainClass": "ex1.email",
+            "projectName": "VisualStudioProjects_1e5a62af"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trio",
+            "request": "launch",
+            "mainClass": "ex7.trio",
+            "projectName": "VisualStudioProjects_1e5a62af"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Innertrio8",
+            "request": "launch",
+            "mainClass": "Innertrio8",
+            "projectName": "VisualStudioProjects_1e5a62af"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trio82",
+            "request": "launch",
+            "mainClass": "ex8.trio82",
+            "projectName": "VisualStudioProjects_1e5a62af"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Trio8profe",
+            "request": "launch",
+            "mainClass": "Trio8profe",
+            "projectName": "VisualStudioProjects_1e5a62af"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trio8",
+            "request": "launch",
+            "mainClass": "ex8.trio8",
+            "projectName": "VisualStudioProjects_1e5a62af"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trio2",
+            "request": "launch",
+            "mainClass": "trio2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trio1",
+            "request": "launch",
+            "mainClass": "trio1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trio8",
+            "request": "launch",
+            "mainClass": "trio8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - trio",
+            "request": "launch",
+            "mainClass": "trio"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Calculdetemps",
+            "request": "launch",
+            "mainClass": "Calculdetemps"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - triple",
+            "request": "launch",
+            "mainClass": "triple"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Questionari",
+            "request": "launch",
+            "mainClass": "Questionari",
+            "projectName": "VisualStudioProjects_de84c837"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PreuArticle",
+            "request": "launch",
+            "mainClass": "PreuArticle"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Grassacorporal",
+            "request": "launch",
+            "mainClass": "Grassacorporal",
+            "projectName": "VisualStudioProjects_de84c837"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - While",
+            "request": "launch",
+            "mainClass": "While"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - cursa2",
+            "request": "launch",
+            "mainClass": "cursa2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - cursa",
+            "request": "launch",
+            "mainClass": "cursa"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - email",
+            "request": "launch",
+            "mainClass": "email"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExerciciSencill1",
+            "request": "launch",
+            "mainClass": "ExerciciSencill1"
+        }
+    ]
+}

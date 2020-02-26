@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - entrarusuaris",
+            "request": "launch",
+            "mainClass": "app.entrarusuaris",
+            "projectName": "practica77"
+        }
+    ]
+}
