@@ -1,53 +1,50 @@
 package xarxasocial.templates;
-
-import java.time.LocalDate;
-import java.time.Period;
-
-import xarxasocial.funcions.Menu;
-
 /**
  * Lector
  */
 public class Lector extends Usuaris {
 
-    protected boolean major;
-    protected int edat;
-    protected LocalDate naixament;
+    public boolean major;
        
     public Lector(String rol) {
         super(rol);
-    }    
+    }
+    public boolean isMajor() {
+        return major;
+    }
+
+    public void setMajor(boolean major) {
+        this.major = major;
+    }
 
     @Override
     public void demanarDades() {
         super.usuari = System.console().readLine("Introdueix un nom d'usuari unic (jo no comprovaré si ja hi és): ");
-        super.contrasenya = System.console().readLine("Introdueix una contrasenya: ");
-        String data = System.console().readLine("Introdueix la data de naixament(yyyy/MM/dd): ");        
-        LocalDate naixament = LocalDate.parse(data);
-   
+        super.contrasenya = System.console().readLine("Introdueix una contrasenya: ");   
     }
 
     @Override
-    public void printarDades() {
+    public void printarMenu() {
+
+        System.out.println("*************************************");
+        System.out.println("* 1- Seguir a un Editor nou         *");
+        System.out.println("* 2- Veure els editors que segueixo *");
+        System.out.println("* 3- Mirar el teu mur               *");
+        System.out.println("* 0- Log out                        *");
+        System.out.println("*************************************");
 
     }
 
     @Override
-    public void majorEdat() {
+    public boolean esMajor() {
         
+        return major;
+
     }
 
-    public void calcularEdat(){
-        LocalDate ld = LocalDate.now();
-        Period periode = Period.between(this.naixament, ld);
+    
 
-        if (periode.getYears() >= 18){
-            this.major = true;
-        }
-        else{
-            this.major = false;
-        }
-    }
+
 
     
     

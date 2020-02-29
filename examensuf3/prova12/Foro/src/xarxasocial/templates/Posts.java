@@ -1,30 +1,35 @@
 package xarxasocial.templates;
 
+import java.time.LocalDateTime;
+
 public class Posts {
     
+    private LocalDateTime ldt;
     private String titol;
+    private String autor;
     private String contingut;
     private boolean majoredat;
+    
+    public Posts(String autor) {
+        this.autor = autor;
+    }
 
-    public Posts(String titol) {
-        this.titol = titol;
+    public LocalDateTime getLdt() {
+        return ldt;
     }
 
     public String getTitol() {
         return titol;
     }
 
-    public void setTitol(String titol) {
-        this.titol = titol;
+    public String getAutor() {
+        return autor;
     }
 
     public String getContingut() {
         return contingut;
     }
 
-    public void setContingut(String contingut) {
-        this.contingut = contingut;
-    }
 
     public boolean isMajoredat() {
         return majoredat;
@@ -34,10 +39,17 @@ public class Posts {
         this.majoredat = majoredat;
     }
 
-    
+    public void demanarPost(){
+        this.titol = (System.console().readLine("Introdueix el titol: "));
+        this.contingut = (System.console().readLine("Introdueix el contingut: "));;
+        this.ldt = LocalDateTime.now();
+    }
 
 
 
-    
+
+   
+
+
 
 }

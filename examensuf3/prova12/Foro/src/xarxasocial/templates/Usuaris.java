@@ -1,10 +1,13 @@
 package xarxasocial.templates;
 
+import java.util.ArrayList;
+
 public abstract class Usuaris {
 
-    protected String usuari, contrasenya, rol;
-
-    public Usuaris(String rol) {
+    public String usuari, contrasenya, rol;
+    public ArrayList<Usuaris> seguits;
+    
+    public Usuaris(String rol){
         this.rol = rol;
     }
 
@@ -32,16 +35,22 @@ public abstract class Usuaris {
         this.contrasenya = contrasenya;
     }
 
+    public ArrayList<Usuaris> getSeguits() {
+        return seguits;
+    }
+
+    public void setSeguits(ArrayList<Usuaris> seguits) {
+        this.seguits = seguits;
+    }
+
+    public void seguirEditor(Usuaris seguireditor){
+        this.seguits.add(seguireditor);        
+    }
+
     public abstract void demanarDades();
-    public abstract void printarDades();
-    public abstract void majorEdat();
+    public abstract void printarMenu();
+    public abstract boolean esMajor();
 
 
-
-
-
-
-       
-    
-        
+           
 }
