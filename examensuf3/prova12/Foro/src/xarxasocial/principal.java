@@ -41,10 +41,10 @@ public class principal {
         while (!exit) {
 
             Menu.mostraMenu();
-            int opcio = Integer.parseInt(System.console().readLine());
+            String opcio = System.console().readLine();
 
             switch (opcio) {
-                case 1:
+                case "1":
                     String login = System.console().readLine("Introdueix el teu username: ");
                     String contrasenya = System.console().readLine("Introdueix el teu password: ");
 
@@ -174,7 +174,7 @@ public class principal {
 
                     }
                     break;
-                case 2:
+                case "2":
 
                     Lector rlec = new Lector(Lector.class.getSimpleName());
                     rlec.demanarDades();
@@ -186,7 +186,7 @@ public class principal {
                     alu.add(rlec);
 
                     break;
-                case 3:
+                case "3":
                     exit = true;
                     break;
                 default:

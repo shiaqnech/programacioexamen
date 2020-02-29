@@ -159,7 +159,8 @@ public class Funcions {
 
     }
 
-    public static void llistarPostsEditor(String nomadmin, Usuaris usr, ArrayList<Posts> psts, DateTimeFormatter formatter) {
+    public static void llistarPostsEditor(String nomadmin, Usuaris usr, ArrayList<Posts> psts,
+            DateTimeFormatter formatter) {
 
         for (Posts i : psts) {
 
@@ -167,13 +168,13 @@ public class Funcions {
 
                 if (i.getAutor().equals(x.getUsuari()) || i.getAutor().equals(nomadmin)) {
 
-                    System.out.println("########################");
-
+                    System.out.println("********************************");
                     System.out.println("Data: " + i.getLdt().format(formatter));
                     System.out.println("Autor: " + i.getAutor());
                     System.out.println("+18 ?" + i.isMajoredat());
                     System.out.println("Títol: " + i.getTitol());
                     System.out.println("Contingut: " + i.getContingut());
+                    System.out.println("********************************");
 
                 }
 
@@ -182,36 +183,37 @@ public class Funcions {
         }
     }
 
-    public static void llistarPostsLector(String nomadmin, Usuaris usr, ArrayList<Posts> psts, DateTimeFormatter formatter) {
+    public static void llistarPostsLector(String nomadmin, Usuaris usr, ArrayList<Posts> psts,
+            DateTimeFormatter formatter) {
 
         if (usr.esMajor()) {
-                        
+
             for (Posts i : psts) {
 
+                if (i.getAutor().equals(nomadmin)) {
 
-
-                if(i.getAutor().equals(nomadmin)){
-
-                    System.out.println("########################");
-
+                    System.out.println("********************************");
                     System.out.println("Data: " + i.getLdt().format(formatter));
                     System.out.println("Autor: " + i.getAutor());
                     System.out.println("+18 ?" + i.isMajoredat());
                     System.out.println("Títol: " + i.getTitol());
-                    System.out.println("Contingut: " + i.getContingut());   
-                }
-                
-                for (Usuaris x : usr.getSeguits()) {
-                    
-                    if (i.getAutor().equals(x.getUsuari())){
-                        
-                        System.out.println("########################");
+                    System.out.println("Contingut: " + i.getContingut());
+                    System.out.println("********************************");
 
+                }
+
+                for (Usuaris x : usr.getSeguits()) {
+
+                    if (i.getAutor().equals(x.getUsuari())) {
+
+                        System.out.println("********************************");
                         System.out.println("Data: " + i.getLdt().format(formatter));
                         System.out.println("Autor: " + i.getAutor());
                         System.out.println("+18 ?" + i.isMajoredat());
                         System.out.println("Títol: " + i.getTitol());
-                        System.out.println("Contingut: " + i.getContingut());             
+                        System.out.println("Contingut: " + i.getContingut());
+                        System.out.println("********************************");
+
                     }
                 }
             }
@@ -220,23 +222,34 @@ public class Funcions {
 
             for (Posts i : psts) {
 
-                if(i.getAutor().equals(nomadmin) && !i.isMajoredat()){
+                if (i.isMajoredat()) {
+                    System.out.println("Contignute restringit ets menor");
+                }
+
+                if (i.getAutor().equals(nomadmin) && !i.isMajoredat()) {
+
+                    System.out.println("********************************");
                     System.out.println("Data: " + i.getLdt().format(formatter));
                     System.out.println("Autor: " + i.getAutor());
                     System.out.println("+18 ?" + i.isMajoredat());
                     System.out.println("Títol: " + i.getTitol());
                     System.out.println("Contingut: " + i.getContingut());
+                    System.out.println("********************************");
+
                 }
 
                 for (Usuaris x : usr.getSeguits()) {
 
-                        if ( i.getAutor().equals(x.getUsuari()) && !i.isMajoredat())  {
-
+                    if (i.getAutor().equals(x.getUsuari()) && !i.isMajoredat()) {
+                        
+                        System.out.println("********************************");
                         System.out.println("Data: " + i.getLdt().format(formatter));
                         System.out.println("Autor: " + i.getAutor());
                         System.out.println("+18 ?" + i.isMajoredat());
                         System.out.println("Títol: " + i.getTitol());
                         System.out.println("Contingut: " + i.getContingut());
+                        System.out.println("********************************");
+
 
                     }
                 }
@@ -246,22 +259,22 @@ public class Funcions {
 
     }
 
-	public static Usuaris getEditorPerAfegir(String buscareditor, ArrayList<Usuaris> alu) {
+    public static Usuaris getEditorPerAfegir(String buscareditor, ArrayList<Usuaris> alu) {
 
         for (Usuaris i : alu) {
-            if(i.getUsuari().equals(buscareditor)){
+            if (i.getUsuari().equals(buscareditor)) {
                 return i;
-            }            
+            }
         }
-		return null;
-	}
+        return null;
+    }
 
-	public static void printarSeguits(Usuaris usr) {
+    public static void printarSeguits(Usuaris usr) {
 
-        for (Usuaris i: usr.getSeguits()) {
+        for (Usuaris i : usr.getSeguits()) {
             System.out.println("#######Seguits#######");
             System.out.println();
-            System.out.println("    "+i.getUsuari()   );
+            System.out.println("    " + i.getUsuari());
         }
-	}
+    }
 }
